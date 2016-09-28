@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FormGet Responsive Form</title>
+<!-----Including CSS for different screen sizes----->
+<link rel="stylesheet" type="text/css" href="MainStyle.css">
+<link rel="stylesheet" media="screen and (max-width: 1200px) and (min-width: 601px)" href="MainStyle1.css" />
+<link rel="stylesheet" media="screen and (max-width: 600px) and (min-width: 351px)" href="MainStyle2.css" />
+<link rel="stylesheet" media="screen and (max-width: 350px)" href="MainStyle3.css" />
+<script src="validation.js">
+
+
+
+</script>
+</head>
+<body>
+<div id="envelope">
+<form name="myForm" onsubmit="return(validate())" method="post">
+<header>
+<h2>Example of Responsive Form</h2>
+<p>This is my form. Fill it out. It's Awesome.</p>
+</header>
+
+<br><label>Your Name</label>
+<input id="name" name="Name" placeholder="Ashley Peterson" type="text" maxlength="20" width="100px;">
+    <br><span id="Namebox" style="color:red;"></span><br>
+
+<label>Email Id</label>
+<input name="Email" placeholder="yourname@gmail.com" type="text">
+    <span id="Emailbox" style="color:red;"></span><br>
+
+<label>Contact Number</label>
+<input name="Contact" placeholder="123456789" type="text" maxlength="10" >
+    <br><span id="Contactbox" style="color:red;"></span><br>
+
+<label>Password</label>
+<input name="Password" placeholder="******" type="password">
+<br><span id="Passwordbox" style="color:red;"></span><br>    
+
+<label>Message</label>
+<textarea cols="15" name="message" placeholder="Message" rows="10">
+</textarea>
+
+<input id="submit" type="submit" value="Send Message" onclick="validate()">
+</form>
+</div>
+</body>
+</html>
